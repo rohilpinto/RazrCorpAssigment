@@ -12,18 +12,28 @@
 	--Semi--light-blue: #2C3345;
 	--Light-blue: #728195;
 	--White: #ffffff;
+	font-size: 62.5%;
 }
 
 body {
 	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
 }
 
 .nav {
 	background-color: var(--white);
-}
-
-.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
 	
 }
+ 
+
+.nav--links a{
+	margin-right: 30px;
+}
+
+
 
 
