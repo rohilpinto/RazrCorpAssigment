@@ -1,0 +1,29 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+
+/* Colors */
+
+	--Alchemy-red: #DF3128;
+	--Semi--light-blue: #2C3345;
+	--Light-blue: #728195;
+	--White: #ffffff;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+	background-color: var(--white);
+}
+
+.logo {
+	
+}
+
+
