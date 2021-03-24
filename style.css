@@ -8,6 +8,9 @@
   /* Colors */
 
   --Alchemy-red: #df3128;
+  --Light-red: #e48884;
+  --Extra-light-red: #fbd1d2;
+
   --Semi--light-blue: #2c3345;
   --Light-blue: #728195;
   --White: #ffffff;
@@ -15,6 +18,7 @@
   --Light-orange: #fdb5a0;
   --shy-blue: #f7f8fd;
   --Bold-blue: #04a5ff;
+  --Bold-green: #2ec88c;
 
   --Super-shy-blue: #d2e6fe;
   --Shy-yellow: #fef5d0;
@@ -30,6 +34,8 @@
   --Semi-bold: 600;
   --Bold: 700;
   --Extra-bold: 800;
+
+  --fontfly: "Poppins", sans-serif;
 }
 
 body {
@@ -165,6 +171,7 @@ p {
 .stats--card-container {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .stats--card {
@@ -182,12 +189,11 @@ p {
   width: 50px;
 
   height: 50px;
-  margin: auto;
+  margin: 15px auto;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
 }
 
 .stats--card:nth-child(1) .stats--card-img-wrapper {
@@ -283,6 +289,10 @@ p {
 
 /* Skills */
 
+.skills {
+  background-color: var(--shy-blue);
+}
+
 .skills--selector-wrapper {
   width: 700px;
   border-radius: 50px;
@@ -292,15 +302,14 @@ p {
   font-size: 1.5rem;
 
   align-items: center;
-	justify-content: center;
+  justify-content: center;
   margin: auto;
-
-	
+  padding-top: 20px;
 }
 
 .skills--selector {
-	-webkit-box-shadow: 0px 0px 43px -8px #878787; 
-	box-shadow: 0px 0px 43px -8px #878787;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
+  box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
 }
 
 .skills--selector:nth-child(1) {
@@ -322,4 +331,384 @@ p {
   border-radius: 0px 50px 50px 0px;
   padding: 15px 15px 15px 25px;
   color: var(--Bold-blue);
+}
+
+.skills--flex-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 950px;
+  margin: auto;
+}
+
+.skills--flex-wrapper > img {
+  margin-top: 50px;
+}
+
+.skills--description {
+  margin-top: 50px;
+}
+
+.skills--description > p:nth-child(1) {
+  font-size: 1.3rem;
+  color: var(--Light-blue);
+  margin-top: 20px;
+}
+
+.skills--description > h1 {
+  width: 300px;
+
+  font-size: 2.4rem;
+  margin-top: 10px;
+}
+
+.skills--description > h1 span {
+  color: var(--Bold-blue);
+}
+
+.skills--description > p:nth-child(3) {
+  width: 350px;
+  margin-top: 15px;
+  color: var(--Light-blue);
+  font-size: 1.3rem;
+  font-weight: var(--Regular);
+}
+
+.skills-info-wrapper {
+  margin-top: 20px;
+  display: flex;
+}
+
+.skills--info {
+  margin: 0 15px 0 0;
+}
+
+.skills--info h1 {
+  font-size: 2.4rem;
+}
+
+.skills--info:nth-child(1) > h1 {
+  color: var(--Bold-green);
+}
+.skills--info:nth-child(2) > h1 {
+  color: var(--Bold-blue);
+}
+
+.skills--info:nth-child(3) > h1 {
+  color: var(--Alchemy-red);
+}
+
+/* plans */
+
+.plans {
+  text-align: center;
+}
+
+.plans > p:nth-child(1) {
+  color: var(--Bold-blue);
+  font-size: 1.7rem;
+  margin-top: 65px;
+}
+
+.plans > h1 {
+  margin-top: 25px;
+}
+
+.plans > p:nth-child(3) {
+  margin-top: 25px;
+  color: var(--Light-blue);
+}
+
+.plan--features-list {
+  /* display: flex; */
+}
+.plan--features {
+  display: flex;
+  justify-content: center;
+}
+
+.plan--features img {
+  text-align: left;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.plan--features h4 {
+  text-align: left;
+  width: 200px;
+  line-height: 2.9;
+}
+
+.plan--price-card-flex-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.plan--price-card {
+  width: 300px;
+  min-height: 400px;
+  margin: 20px;
+  background-color: var(--White);
+  /* padding: 50px 50px 50px 50px; */
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
+  box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plan--price-card > span {
+  width: 64px;
+  height: 64px;
+
+  background-color: black;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  border-radius: 50px;
+  margin: 25px auto 10px auto;
+}
+
+.plan--price-card:nth-child(1) > span {
+  background-color: var(--Bold-green);
+}
+
+.plan--price-card:nth-child(2) > span {
+  background-color: var(--Bold-blue);
+}
+.plan--price-card:nth-child(3) > span {
+  background-color: var(--Alchemy-red);
+}
+
+.plan--price-card:nth-child(1) h2 {
+  color: var(--Bold-green);
+}
+.plan--price-card:nth-child(2) h2 {
+  color: var(--Bold-blue);
+}
+.plan--price-card:nth-child(3) h2 {
+  color: var(--Alchemy-red);
+}
+
+.plan--price-card > h3 {
+  margin-top: 20px;
+  font-size: 2.8rem;
+}
+
+.plan--price-card > h3 span {
+  font-size: 1.2rem;
+  color: var(--Light-blue);
+}
+
+.plan--price-card > p {
+  margin: 10px 0 10px 0;
+  color: var(--Light-blue);
+  /* padding: 15px; */
+  font-size: 1.2rem;
+}
+
+.plan--price-card button {
+  font-family: pop;
+  border: none;
+  padding: 15px;
+  background: none;
+}
+
+.plan--btn-wrapper {
+  width: 190px;
+
+  border-radius: 50px;
+  margin: 20px auto 20px auto;
+}
+
+.plan--price-card:nth-child(1) .plan--btn-wrapper {
+  background-color: var(--Light-blue);
+}
+
+.plan--price-card:nth-child(1) .plan--btn-wrapper button {
+  color: var(--White);
+}
+
+.plan--price-card:nth-child(2) .plan--btn-wrapper {
+  background-color: var(--Bold-blue);
+}
+
+.plan--price-card:nth-child(2) .plan--btn-wrapper button {
+  color: var(--White);
+}
+
+.plan--price-card:nth-child(3) .plan--btn-wrapper {
+  background-color: var(--Light-blue);
+}
+
+.plan--price-card:nth-child(3) .plan--btn-wrapper button {
+  color: var(--White);
+}
+
+.plan--price-card button {
+  font-weight: var(--Bold);
+  font-family: var(--fontfly);
+  border: none;
+  padding: 15px;
+  background: none;
+  font-size: 1.2rem;
+  /* letter-spacing: .1px; */
+}
+
+/* review */
+
+.review {
+  background-color: var(--shy-blue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  
+}
+
+.review--card {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  padding: 20px;
+  
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin: 50px 50px;
+  text-align: left;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
+  box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
+}
+
+.review--card-description {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  position: relative;
+  height: 300px;
+}
+
+.review--card-description h3 {
+  margin-bottom: 15px;
+}
+
+.review--card-description h4 {
+  margin-bottom: 15px;
+}
+
+.review--card-description p {
+  margin-bottom: 20px;
+}
+
+.review--card > img {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.quote {
+  position: absolute;
+  bottom: 20px;
+  right: 45px;
+}
+
+
+.review--header {
+  padding-top: 50px;
+}
+
+.review--header h1 {
+  width:  500px;
+  margin-bottom: 25px;
+}
+
+.review--header h1 span {
+  color: var(--Bold-blue);
+}
+
+.review--header p {
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+
+.review--navigation {
+  position: absolute;
+  bottom: -35px;
+  display: flex;
+}
+.review--navigation .circle{
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  border-radius: 50px;
+  background: #000;
+  background-color: var(--Light-blue);
+}
+
+.review--navigation .circle:nth-child(3) {
+  background-color: var(--Bold-blue);
+}
+
+.review--brands {
+  display: flex;
+  
+  /* margin-top: 80px; */
+  padding: 50px;
+  justify-content: space-evenly;
+  background-color: var(--shy-blue);
+}
+
+
+footer {
+  display: flex;
+  padding: 30px;
+  justify-content: space-evenly;
+   
+}
+
+.footer--copyright  {
+  margin-top: 10px;
+  text-align: center;
+}
+.footer--copyright p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: var(--Light-blue);
+}
+
+
+.footer--navigation div{
+   display: flex;
+   flex-direction: column;
+   /* word-break: break-all; */
+}
+
+.footer--navigation h4 , .footer--legal  h4{
+  margin-bottom: 17px;
+}
+
+
+
+.footer--navigation div ,.footer--legal div{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--navigation div a, .footer--legal div a{
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: var(--Light-blue)
+}
+
+.footer--navigation , .footer--legal {
+  margin-top: 20px;
 }
