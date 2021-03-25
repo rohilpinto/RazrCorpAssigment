@@ -802,7 +802,7 @@ footer {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .nav--links {
     display: none;
   }
