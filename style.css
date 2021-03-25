@@ -56,6 +56,10 @@ p {
   font-weight: var(--Medium);
 }
 
+:focus {
+  outline: 1px dashed var(--Light-blue);
+}
+
 .nav {
   background-color: var(--white);
 
@@ -534,6 +538,7 @@ p {
   border: none;
   padding: 15px;
   background: none;
+  cursor: pointer;
 }
 
 .plan--btn-wrapper {
@@ -542,6 +547,7 @@ p {
   border-radius: 50px;
   margin: 20px auto 20px auto;
   transition: transform 0.2s ease-in-out;
+  
 }
 
 .plan--btn-wrapper:hover {
@@ -793,6 +799,9 @@ footer {
   .review--header {
     padding-top: 50px;
   }
+  .quote {
+    display: none;
+  }
 
   footer {
     display: block;
@@ -887,7 +896,6 @@ footer {
 
   .review--card > img {
     margin: 15px 0 15px 0;
-     
   }
 
   .quote {
