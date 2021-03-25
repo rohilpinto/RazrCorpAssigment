@@ -137,7 +137,6 @@ p {
 }
 
 .stats--container {
-
   width: 900px;
   margin: auto;
   min-height: 170px;
@@ -156,7 +155,7 @@ p {
 }
 
 .stats--wrapper {
-   width: 200px;
+  width: 200px;
 }
 
 .stats--wrapper p {
@@ -275,7 +274,6 @@ p {
 }
 
 .features-branding {
-  
   /* margin: 0 30px; */
 }
 
@@ -546,7 +544,6 @@ p {
   transition: transform 0.2s ease-in-out;
 }
 
-
 .plan--btn-wrapper:hover {
   transform: scale(1.1);
 }
@@ -694,8 +691,6 @@ p {
   padding: 50px;
   justify-content: space-evenly;
   background-color: var(--shy-blue);
-
-  
 }
 .review--brands img {
   width: 100px;
@@ -765,13 +760,11 @@ footer {
     padding: 20px;
     /* display: flex; */
     justify-content: center;
-    
   }
 
   .stats--wrapper {
-     margin: 25px;
+    margin: 25px;
   }
-
 
   .features--description-wrapper div h4 {
     text-align: center;
@@ -800,7 +793,7 @@ footer {
   .review--header {
     padding-top: 50px;
   }
-  
+
   footer {
     display: block;
     text-align: center;
@@ -840,8 +833,6 @@ footer {
   .skills--selector-wrapper {
     width: auto;
   }
-
-
 }
 
 @media (max-width: 650px) {
@@ -863,20 +854,18 @@ footer {
     width: auto;
   }
 
-
   .skills--selector-wrapper {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
-
 
   .skills--description {
     text-align: center;
   }
-  
+
   .skills--description > h1 {
     width: auto;
   }
-  
+
   .skills--description > p:nth-child(3) {
     width: auto;
   }
@@ -891,18 +880,16 @@ footer {
     padding: 20px;
   }
 
-  
-.review--card > img {
-  margin: 15px 0 15px 0;
-  /* border-radius: 20px; */
-}
+  .review--card > img {
+    margin: 15px 0 15px 0;
+     
+  }
 
-
-.quote {
-  position: relative;
-  bottom: 0px;
-  right: 0px;
-}
+  .quote {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+  }
   .review--header {
     width: 100%;
   }
@@ -915,8 +902,6 @@ footer {
     width: auto;
   }
 
-
-  
   .introduction--branding img {
     display: none;
   }
