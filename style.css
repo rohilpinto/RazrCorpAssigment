@@ -573,7 +573,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px;
-  
 }
 
 .review--card {
@@ -581,7 +580,7 @@ p {
   height: 300px;
   display: flex;
   padding: 20px;
-  
+
   border-radius: 15px;
   justify-content: space-between;
   align-items: center;
@@ -626,13 +625,12 @@ p {
   right: 45px;
 }
 
-
 .review--header {
   padding-top: 50px;
 }
 
 .review--header h1 {
-  width:  500px;
+  width: 500px;
   margin-bottom: 25px;
 }
 
@@ -645,13 +643,12 @@ p {
   margin-bottom: 40px;
 }
 
-
 .review--navigation {
   position: absolute;
   bottom: -35px;
   display: flex;
 }
-.review--navigation .circle{
+.review--navigation .circle {
   width: 10px;
   height: 10px;
   margin: 0 3px;
@@ -673,15 +670,13 @@ p {
   background-color: var(--shy-blue);
 }
 
-
 footer {
   display: flex;
   padding: 30px;
   justify-content: space-evenly;
-   
 }
 
-.footer--copyright  {
+.footer--copyright {
   margin-top: 10px;
   text-align: center;
 }
@@ -691,62 +686,102 @@ footer {
   color: var(--Light-blue);
 }
 
-
-.footer--navigation div{
-   display: flex;
-   flex-direction: column;
-   /* word-break: break-all; */
+.footer--navigation div {
+  display: flex;
+  flex-direction: column;
+  /* word-break: break-all; */
 }
 
-.footer--navigation h4 , .footer--legal  h4{
+.footer--navigation h4,
+.footer--legal h4 {
   margin-bottom: 17px;
 }
 
-
-
-.footer--navigation div ,.footer--legal div{
+.footer--navigation div,
+.footer--legal div {
   display: flex;
   flex-direction: column;
 }
 
-.footer--navigation div a, .footer--legal div a{
+.footer--navigation div a,
+.footer--legal div a {
   margin-bottom: 15px;
   text-decoration: none;
-  color: var(--Light-blue)
+  color: var(--Light-blue);
 }
 
-.footer--navigation , .footer--legal {
+.footer--navigation,
+.footer--legal {
   margin-top: 20px;
 }
-
- 
-
-
 
 /* media quieres */
 
 /* tablet */
 
 @media (max-width: 949px) {
-
   .nav-items {
     flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
   }
 
   .stats--container {
-    width: auto;
-     
+    max-width: 200px;
+    width: 100%;
+    display: block;
   }
-   .skills--flex-wrapper {
-    
-     width: auto;
-   }
 
+
+  .features--description-wrapper div h4 {
+    text-align: center;
+  }
+
+  .features--description-wrapper div p {
+    text-align: center;
+  }
+
+  .features--description-wrapper:last-of-type div h4 {
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+  .features--description-wrapper:last-of-type div p {
+    text-align: center;
+  }
+
+  .skills--flex-wrapper {
+    width: auto;
+  }
+
+  .review--header {
+    text-align: center;
+  }
+
+
+  
+  footer {
+    display: block;
+    text-align: center;
+  }
 }
 
-
 @media (max-width: 696px) {
+  .introduction--branding img {
+    display: none;
+  }
+  .introduction {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
 
+  .introduction h1 {
+    width: auto;
+  }
+
+  .introduction p {
+    width: auto;
+  }
   .features > p:last-of-type {
     width: auto;
   }
@@ -760,37 +795,57 @@ footer {
     width: auto;
   }
 
-
-
   .skills--selector-wrapper {
     width: auto;
   }
+
+
 }
 
-
-@media (max-width: 450px) {
-
-.review--card {
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.review--header {
-  width: 100%;
-}
-
-.review--header h1 {
-  width: auto;
-}
-
-.review--header p {
-  width: auto;
-}
-  .introduction--branding img {
+@media (max-width: 375px) {
+  .nav--links {
     display: none;
   }
 
+  .introduction {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .introduction h1 {
+    width: auto;
+  }
+
+  .introduction p {
+    width: auto;
+  }
+
+
+  .skills--selector-wrapper {
+    font-size: 1.4rem;
+  }
 
   
+
+  .review--card {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .review--header {
+    width: 100%;
+  }
+
+  .review--header h1 {
+    width: auto;
+  }
+
+  .review--header p {
+    width: auto;
+  }
+  .introduction--branding img {
+    display: none;
+  }
 }
