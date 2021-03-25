@@ -878,6 +878,11 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
+    margin: 0;
+  }
+
+  .review--card-description {
+    height: auto;
   }
 
   .review--card > img {
