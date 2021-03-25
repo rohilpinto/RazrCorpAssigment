@@ -823,10 +823,25 @@ footer {
 
 
   .skills--selector-wrapper {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
   }
 
+
+  .skills--description {
+    text-align: center;
+  }
   
+  .skills--description > h1 {
+    width: auto;
+  }
+  
+  .skills--description > p:nth-child(3) {
+    width: auto;
+  }
+
+  .skills-info-wrapper {
+    justify-content: center;
+  }
 
   .review--card {
     flex-direction: column;
