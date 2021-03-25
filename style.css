@@ -238,6 +238,7 @@ p {
 
 .features {
   text-align: center;
+  padding: 15px;
 }
 
 .features > p:nth-child(1) {
@@ -251,7 +252,7 @@ p {
 
 .features > p:last-of-type {
   width: 500px;
-  margin: auto auto 45px auto;
+  margin: auto auto 15px auto;
   line-height: 1.9;
   color: var(--Light-blue);
 }
@@ -267,14 +268,15 @@ p {
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  margin-top: 30px;
+  margin: 30px;
 
   width: 400px;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .features-branding {
-  margin: 0 30px;
+  
+  /* margin: 0 30px; */
 }
 
 .features--description-wrapper div h4 {
@@ -604,7 +606,7 @@ p {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  margin: 50px 50px;
+  margin: 0px 50px;
   text-align: left;
   position: relative;
   -webkit-box-shadow: 0px 0px 17px 0px rgba(170, 170, 170, 0.41);
@@ -635,7 +637,7 @@ p {
 
 .review--card > img {
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 13px;
 }
 
 .quote {
@@ -645,7 +647,7 @@ p {
 }
 
 .review--header {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .review--header h1 {
@@ -655,6 +657,10 @@ p {
 
 .review--header h1 span {
   color: var(--Bold-blue);
+}
+
+.review--header h4 {
+  color: var(--Light-blue);
 }
 
 .review--header p {
@@ -745,7 +751,7 @@ footer {
 
 /* tablet */
 
-@media (max-width: 949px) {
+@media (max-width: 1197px) {
   .nav-items {
     flex-direction: column;
     justify-content: center;
@@ -791,7 +797,9 @@ footer {
     text-align: center;
   }
 
-
+  .review--header {
+    padding-top: 50px;
+  }
   
   footer {
     display: block;
@@ -799,7 +807,7 @@ footer {
   }
 }
 
-@media (max-width: 696px) {
+@media (max-width: 726px) {
   .introduction--branding img {
     display: none;
   }
@@ -836,7 +844,7 @@ footer {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .nav--links {
     display: none;
   }
@@ -880,9 +888,21 @@ footer {
   .review--card {
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 20px;
   }
 
+  
+.review--card > img {
+  margin: 15px 0 15px 0;
+  /* border-radius: 20px; */
+}
+
+
+.quote {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+}
   .review--header {
     width: 100%;
   }
@@ -894,6 +914,9 @@ footer {
   .review--header p {
     width: auto;
   }
+
+
+  
   .introduction--branding img {
     display: none;
   }
