@@ -894,6 +894,7 @@ footer {
     position: relative;
     bottom: 0px;
     right: 0px;
+    display: none;
   }
   .review--header {
     width: 100%;
