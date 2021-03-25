@@ -90,6 +90,7 @@ p {
 
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap-reverse;
   max-width: 1600px;
 }
 
@@ -143,6 +144,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   background-color: var(--White);
   -webkit-box-shadow: 0px 0px 19px -4px #dbdbdb;
   box-shadow: 0px 0px 19px -4px #dbdbdb;
@@ -172,6 +174,7 @@ p {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .stats--card {
@@ -247,6 +250,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .features--description-wrapper {
@@ -337,6 +341,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   width: 950px;
   margin: auto;
 }
@@ -425,6 +430,7 @@ p {
 .plan--features {
   display: flex;
   justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .plan--features img {
@@ -660,7 +666,7 @@ p {
 
 .review--brands {
   display: flex;
-  
+  flex-wrap: wrap;
   /* margin-top: 80px; */
   padding: 50px;
   justify-content: space-evenly;
@@ -714,3 +720,77 @@ footer {
 }
 
  
+
+
+
+/* media quieres */
+
+/* tablet */
+
+@media (max-width: 949px) {
+
+  .nav-items {
+    flex-direction: column;
+  }
+
+  .stats--container {
+    width: auto;
+     
+  }
+   .skills--flex-wrapper {
+    
+     width: auto;
+   }
+
+}
+
+
+@media (max-width: 696px) {
+
+  .features > p:last-of-type {
+    width: auto;
+  }
+
+  .review--card {
+    text-align: center;
+    height: auto;
+  }
+
+  .stats > p {
+    width: auto;
+  }
+
+
+
+  .skills--selector-wrapper {
+    width: auto;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+.review--card {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.review--header {
+  width: 100%;
+}
+
+.review--header h1 {
+  width: auto;
+}
+
+.review--header p {
+  width: auto;
+}
+  .introduction--branding img {
+    display: none;
+  }
+
+
+  
+}
